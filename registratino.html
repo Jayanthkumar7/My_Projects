@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REGISTRATION FORM</title>
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20190630/original/pngtree-initial-jk-logo-designs-inspirations-png-image_4158032.jpg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        
+        body {
+            background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin-top: 40px;
+        }
+        
+        .regform {
+            width: 800px;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: auto;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius:20px 20px 0px 0px;
+        }
+        
+        .main {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 0 0 15px 15px;
+        }
+        
+        form {
+            padding: 10px;
+        }
+        
+        .name {
+            color: white;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+
+        }
+        
+        .input-container {
+            margin-top: 10px;
+        }
+        
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .input-container input[type="text"],
+        .input-container select {
+            width: calc(100% - 44px);
+            padding: 12px 16px; 
+            font-size: 18px; 
+            border-radius: 12px; 
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            margin-top: 5px; 
+        }
+        
+        .input-container input[type="text"]::placeholder {
+            color: #888;
+        }
+        
+        .input-container input[type="text"]:focus,
+        .input-container select:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(59, 175, 159, 0.5);
+        }
+        
+        .radio-container {
+            margin-top: 10px;
+        }
+        
+        .radio-container label {
+            margin-right: 20px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .radio-container label input[type="radio"] {
+            display: none;
+        }
+        
+        .radio-container label .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #3BAF9F;
+            background-color: #ffffff;
+        }
+        
+        .radio-container label input[type="radio"]:checked + .checkmark:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #3BAF9F;
+            display: block;
+        }
+        
+        button[type="button"] {
+            background-color: #3BAF9F;
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* added margin */
+        }
+        
+        button[type="button"]:hover {
+            background-color: #258c7e;
+        }
+        button[type = "button"]:active{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="regform"><h1>REGISTRATION FORM</h1></div>
+    <div class="main"> 
+        <form>
+            <div id="name">
+                <div class="input-container">
+                    <label class="firstlabel">First name</label>
+                    <input class="firstname" type="text" placeholder="firstname" name="first_name">
+                </div>
+                <div class="input-container">
+                    <label class="lastlabel">Last Name</label>
+                    <input class="lastname" type="text" placeholder="lastname" name="last_name">            
+                </div>
+                <div class="input-container">
+                    <h2 class="name">Email</h2>
+                    <input class="email" type="text" placeholder="xyz@gmail.com" name="email">
+                </div>
+                <div class="input-container">
+                    <label class="areacode">Area code</label>
+                    <input class="code" type="text" name="area_code">
+                </div>
+                <div class="input-container">
+                    <label class="phone_number">Phone Number</label>
+                    <input class="number" type="text" placeholder="984*******" name="phone">
+                </div>
+                <div class="input-container">
+                    <h2 class="name">Subject</h2>
+                    <select class="option" name="subject">
+                        <option disabled="disabled" selected="selected">--choose option</option>
+                        <option>subject 1</option>
+                        <option>subject 2</option>
+                        <option>subject 3</option>
+                        <option>subject 4</option>
+                        <option>subject 5</option>
+                        <option>subject 6</option> 
+                    </select>
+                </div>  
+                <div class="input-container">
+                    <h2 id="student">Are you a beginner?</h2>
+                    <label class="radio">
+                        <input class="radio-one" type="radio" checked="checked" name="check">
+                        <span class="checkmark"></span>
+                        YES
+                    </label>
+                    <label class="radio">
+                        <input class="radio-two" type="radio" name="check">
+                        <span class="checkmark"></span>
+                        NO
+                    </label> 
+                </div>
+                <a href="#">
+                    <button type="button">Register</button>
+                </a>
+            </div> 
+        </form>
+    </div>
+</body>   
+</html>
