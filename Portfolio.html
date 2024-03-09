@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.jpeg" type="image/icon type">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;            color: white;
+        }
+        body{
+            background-color: #032835;
+        }
+        .header{
+            display: flex;
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            padding: 20px 10%;
+            justify-content: space-between;
+            align-items: center;
+            z-index:100;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size:15px;
+            margin-left: 20px;
+            color: rgb(254, 254, 254);
+        }
+        .navbar a:hover,.navbar a.active{
+            color: rgb(30, 174, 231);
+        }
+        .logo{
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(254, 254, 254);
+        }
+        .home{
+            align-items: center;
+            height: 100vh;
+            display: flex;
+            padding: 0 10%;
+        }
+        .home-content {
+            width:600px;
+        }
+        .home-content h1{
+            font-size:56px;
+            font-weight: 700px;
+        }
+        .home-content h3{
+            font-size: 27px;
+            font-weight: 900;
+            color: rgb(33, 113, 183); 
+        }
+        .home-content p{
+            padding-top: 10px;
+            font-size: 16px;
+            margin: 20px 0 20px;
+        }
+        .home-content .btn-box{
+            display: flex;
+            height: 50px;
+            width: 350px;
+            justify-content: space-between;
+        }
+        .btn-box a{
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+            text-decoration: none;
+            background-color: rgb(30, 141, 210);
+            width: 150px;
+            height: 100%;
+            border-radius: 8px;
+            font-size: large;
+            font-weight: 600;
+            letter-spacing: 1px; 
+            border: 4px solid rgb(30, 141, 210);;         
+        }
+        .btn-box a:nth-child(2){
+            background: transparent;
+            color: rgb(30, 141, 210);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+<a href="#" class="logo">Jayanth.</a>
+<nav class="navbar">
+    <a href="#" class="active">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">SERVICES</a>
+    <a href="#">PORTFOLIO</a>
+    <a href="#">CONTACT</a>
+</nav>
+    </header>
+    <section class="home"> 
+        <div class="home-content">
+            <h1>Hi, I'm Jayanth</h1>
+            <h3>Aspiring Developer</h3>
+            <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah BlahBlahBlahBlah Blah Blah BlahBlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah BlahBlah Blah Blah BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah Blah Blah Blah Blahn<p>
+            <div class="btn-box">
+                <a href="#">contact</a>
+                <a href="#">let's talk</a>
+            </div>    
+        </div>
+    </section>
+</body>
+</html>
